@@ -1,5 +1,7 @@
+
 let leftBtn = document.querySelector('#left');
 let rightBtn = document.querySelector('#right');
+
 
 leftBtn.addEventListener('mouseover', () => {
     if (localStorage.getItem("theme-mode") == "dark") {

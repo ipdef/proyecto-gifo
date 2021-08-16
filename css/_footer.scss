@@ -1,40 +1,79 @@
 @import 'variables';
 
 footer {
-    width: 32%;
-    height: 180px;
-    margin: auto;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    display: flex;
+    font-size: 15px;
+    font-family: "Roboto Regular";
     text-align: center;
-    align-items: center;
+    height: 160px;
     @media screen and (min-width: 1220px) {
-        justify-content: space-between;
-    }
-    P {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 13px;
-        color: #000000;
-        letter-spacing: 0;
-        margin-bottom: 20px;
-    }
-    ul{
-        text-align: center;
-        @media screen and (min-width: 1220px) {
-            display: flex;
+            ul{
+                width: 35%;
+                float: left;
+                margin: auto;
+                height: 120px;
+                padding-top: 35px;
+                // display: flex;
+                //letter-spacing: 0;
+                // padding-top: 65px;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                }
+                a {
+                    padding: 12px 12px;
+                }
+                p{
+                    display: inline-block;
+                }
+                
+            }
+            span {
+                width: 35%;
+                margin: auto;
+                height: 120px;
+                float: right;
+                padding-top: 35px;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                }
+            }
+            
         }
-    }
-    li {
-        display: inline;
-        a {
-            color: #CDD6E0;
-            padding-right: 30px;
-            img {
-                width: 20px;
-                height: 20px;
+
+}
+
+@media screen and (min-width: 477px) {
+        ul{
+            width: 100%;
+            margin: auto;
+            height: auto;
+            // display: flex;
+            //letter-spacing: 0;
+            // padding-top: 65px;
+            li {
+                list-style: none;
+                display: inline-block;
+            }
+            p{
+                padding-top: 35px;
+                padding-bottom: 20px;
+            }
+            a {
+                padding: 12px 12px;
+            }
+        }
+        span {
+            width: 100%;
+            margin: auto;
+            height: auto;
+            li {
+                list-style: none;
+                display: inline-block;
+                padding-top: 30px;
             }
         }
     }
-}
+
+
+

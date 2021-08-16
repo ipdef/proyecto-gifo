@@ -1,20 +1,28 @@
 @import 'variables';
 
+//LOGO MOBILE AND DESKTOP
+
   
 /* DESKTOP */
 #logo-desktop {
     display: none;
+    :hover {
+        cursor: pointer;
+    }
     @media screen and (min-width: 1220px) {
         display: block;
+        
     }
 }
   
 /* MOBILE */
 #logo-mobile {
     display: block;
+    padding: 15px 25px;
     @media screen and (min-width: 1220px) {
         display: none;
     }
+    
 }
 
   
@@ -31,16 +39,16 @@
 /* MENU */
 .menu {
     ul {
-        width: 100%;
         position: absolute;
-        top: 100px;
-        left: 5px;
+        top: 85px;
+        left: 0px;
+        text-align: center;
         overflow: hidden;
         list-style: none;
         background: $base-color-light;
         opacity: 90%;
         height: 0;
-
+        align-items: center;
         @media screen and (min-width: 1220px) {
             top: 0;
             overflow: hidden;
@@ -49,23 +57,25 @@
             display: flex;
             flex-flow: row;
             justify-content: flex-end;
-            margin-top: 30px;
-            padding: 0 110px;
+            margin-top: 10px;
+            padding-left: 20px;
+            padding: 0px 100px;
         }
-  
+        
     }
     li {
         position: relative;
-        padding: 0 20px;
-        margin-top: 30px;
-        font-size: 15px;
         color: $bg-color-light;
+        font-family:'Montserrat';
+        font-size: 13px;
+        letter-spacing: 0;
         text-align: center;
-        line-height: 60px;
-        @media screen and (min-width: 1220px) {
-            text-transform: uppercase;
-            margin: 0;
-        }
+        text-transform: uppercase;
+        margin: 0;
+    }
+    @media screen and (min-width: 477px) {
+        display: block;
+        padding: 25px 320px;
     }
 }
   
@@ -74,6 +84,7 @@
     color: $bg-color-light;
     line-height: 28px;
     font-size: 16px;
+    text-align: center;
     @media screen and (min-width: 1220px) {
         color: $base-color-light;
         &:hover {
@@ -90,7 +101,6 @@
   /* HUMBURGER */
 .bars {
     display: block;
-    width: 25px;
     height: 2px;
     margin-bottom: 6.5px;
     margin-right: 10px;
@@ -109,7 +119,7 @@
     @media screen and (min-width: 1220px) {
         display: none;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 477px) {
         margin-right: 20px;
     }
 }
@@ -117,8 +127,8 @@
 /* checkbox style */
 .button {
     display: block;
-    width: 40px;
-    height: 32px;
+    width: 15px;
+    height: 40px;
     opacity: 0;
     z-index: 2;
     position: absolute;
@@ -127,17 +137,19 @@
     }
     &:checked ~ ul {
         height: 100%;
+        margin: auto;
         transition: height 0.5s ease-in-out;
     }
     &:checked ~ span {
+        width: 100%;
         opacity: 1;
-        transform: rotate(45deg) translate(2px, 1px);
+        transform: rotate(60deg) translate(2px, 1px);
         &:nth-last-child(3) {
             opacity: 0;
             transform: rotate(0deg) scale(0.2, 0.2);
         }
         &:nth-last-child(2) {
-            transform: rotate(-45deg) translate(1px, 0px);
+            transform: rotate(-60deg) translate(1px, 0px);
         }
     }
     @media screen and (min-width: 1220px) {

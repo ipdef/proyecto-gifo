@@ -8,7 +8,8 @@ let logoMobile = document.getElementById('logo-mobile');
 let btnGifos = document.getElementById('create-gif');
 let sliderRight = document.getElementById('right');
 let sliderLeft = document.getElementById('left');
- 
+let sliderRightHover = document.getElementById('right-hover');
+let sliderLeftHover = document.getElementById('left-hover');
 //HOST PATH 
 let host = "http://"+window.location.hostname+":"+location.port;
 
@@ -40,8 +41,14 @@ function changeSearchIcon() {
 function changeSliders() {
     toggle_src(sliderRight, "/assets/slider-right-btn.svg", "/assets/slider-right-btn-dark.svg");
     toggle_src(sliderLeft, "/assets/slider-left-btn.svg", "/assets/slider-left-btn-dark.svg")
+    toggle_src(sliderRight, "/assets/slider-right-btn-hover.svg", "/assets/slider-right-btn-hover-dark.svg");
+    toggle_src(sliderLeft, "/assets/slider-left-btn-hover.svg", "/assets/slider-left-btn-hover-dark.svg")
 }
- 
+function changeSliders() {
+    toggle_src(twitter, "/assets/twitter-icon-hover", "/assets/twitter-icon-hover-dark");
+}
+
+
 function changeLinkContent () {
     if(changeModeLink.textContent == 'Modo Diurno') {
         changeModeLink.textContent = 'Modo Nocturno';
@@ -81,3 +88,5 @@ function changeTheme() {
     changeLinkContent();
     changeLogo();
 }
+
+

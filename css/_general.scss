@@ -5,15 +5,15 @@
     padding: 0px;
     box-sizing: border-box;
 }
-  
+
 body {
-    width: 100%;
+    width: 105%;
+    height: auto;
     margin: auto;
     border-top: $base-color-light 5px solid;
     border-bottom: $base-color-light 5px solid;
 }
 
 main {
-    font-family: "Montserrat", sans-serif;
     color: $base-color-light;
 }

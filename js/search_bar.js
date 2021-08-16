@@ -67,17 +67,7 @@ searchBtn.addEventListener('click', () => {
     }
 });
 
-closeSearchBtn.addEventListener('click', () => {
-    $gifSection.style.display = 'none';
-    $searchResult.innerHTML = '';
-    input.value = '';
-    searchMoreGifs.style.display = 'none';
 
-    closeSearchBtn.style.display = 'none';
-    searchBtn.style.display = 'block';  //No muestra la lupa nuevamente
-    if(localStorage.getItem("theme-mode") == "dark"){
-        searchBtn.src = "/assets/search-icon-dark.svg";
-    } else {
-        searchBtn.src = "/assets/search-icon.svg";
-    }
-});
+
+
+

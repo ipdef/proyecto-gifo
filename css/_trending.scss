@@ -1,72 +1,92 @@
 @import 'variables';
 /*******************/
+
+
 #trending {
     background-color: $trending-bg-color;
     width: 100%;
     height: 640px;
     padding: 0 20px;
-    @media screen and (min-width: 1220px) {
+    @media screen and (min-width: 1220px){
         padding: 0 100px;
     }
 }
-  
+
+
 .trending-text {
     text-align: center;
-    padding: 100px 60px;
+    padding: 60px 10px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 17px;
     color: $base-color-light;
     line-height: 23px;
+    font-family: "Montserrat", sans-serif;
     p {
-    color: $text-color;
-    padding-top: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    }
-}
-  
-.slider {
-    display: none;
-}
-  
-#main-gifs-container {
-    display: flex;
-    overflow: hidden;
-}
-  
-#gif {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-}
-  
-@media screen and (min-width: 1220px) {
-    .main-trendign-container {
-      display: flex;
-      justify-content: space-between;
-    }
-    .slider {
-      padding: 0 30px;
-      display: block;
+        color: $text-color;
+        padding-top: 20px;
+        font-weight: 400;
     }
 }
 
-//ventana modal
-#ventana-modal{
-    width: 100%;
-    height: 200px;
-    margin: auto;
-    text-align: center;
+
+.slider {
+    display: none;
 }
+
+
+#main-gifs-container {
+    display: flex;
+    overflow: hidden;
+    :hover {
+        cursor: pointer;
+        margin: auto;
+        opacity: 0.5;
+        visibility: visible;
+        transition: all .4s;
+        background-color: rgba(24,188,156,.9);
+    }
+}
+
+
+#gif {
+    width: 320px;
+    height: 260px;
+    margin: 12px;
+} 
+
+
+@media screen and (min-width: 1220px) {
+
+    .main-trendign-container {
+        display: flex;
+        justify-content: space-between;
+        :hover {
+            cursor: pointer;
+            margin: auto;
+        }
+    }
+    .slider {
+        padding: 0 30px;
+        display: block;
+    }
+}
+
+
+// #ventana-modal {
+//     display: none;
+// }
+
+
 .modal-container {
-    background-color: $bg-color-violet;
-    width: 25%;
-    height: 200px;
+    opacity: 0.6;
+    background-color: #572EE5;
+    width: 350px;
+    height: 300px;
     margin: 10px;
     position: relative;
-    margin: auto;
+    
 }
-  
+
 .modal-img {
     float: right;
     margin: 5px;
@@ -74,10 +94,11 @@
         cursor: pointer;
     }
 }
-  
+
 .modal-text {
     position: absolute;
     margin-top: 130px;
     margin-left: 10px;
 }
-  
+
+
